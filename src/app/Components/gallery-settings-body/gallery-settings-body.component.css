@@ -1,0 +1,22 @@
+.gallery-body button{
+    background-color: #2171AE;
+    color: white;
+}
+
+.gallery-body button:hover{
+    background-color: #007bff;
+    color: white;
+}
+.gallery-body {
+    padding: 30px;
+    border:1px solid #ddd;
+    border-radius:3px;
+    width:35%;
+}
+
+.gallery-body {
+    font-size: medium;
+}
+.gallery-body label {
+    font-size: 14px;
+}

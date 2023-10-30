@@ -1,0 +1,171 @@
+<form>
+    <div class="d-flex justify-content-center align-items-center main-div ">
+        <div class="gallery-body">
+            <div class="Second-main-div " style="padding:16px 16px 8px 16px;">
+                <!-- The logo's -->
+                <div class="d-flex justify-content-between">
+                    <!--Logo-1-->
+                    <div >
+                        <div style="margin-left: 25px;">
+                            <div class="d-flex justify-content-center align-items-center" style="width:100px; height:20px; border:1px solid black;  border-bottom: 0px; background-color: #f2f2f2">Nav.</div>
+                            <div class="d-flex">
+                                <div class="d-flex justify-content-center align-items-center" style="width:20px; height:100px; border:1px solid black; border-right: 0px; background-color: #f2f2f2">S.</div>
+                                <div class="d-flex justify-content-center align-items-center" style="width:80px; height:100px; border:1px solid black; background-color: #f2f2f2">Gallery</div>
+                            </div>
+                        </div>
+                        
+                        <div> 
+                            <label style="font-size:12px;">
+                                <input  type="radio" ng-model="checkbox1" (change)="updateSelectedOptions2($event, 'Left Search, Gallery Right')"> Left Search, Gallery Right
+                            </label>
+                        </div>
+                    </div>
+                    <!-- Logo-2 -->
+                    <div>
+                        <div style="margin-left: 25px;">
+                            <div class="d-flex justify-content-center align-items-center" style="width:100px; height:20px; border:1px solid black; border-bottom: 0px; background-color: #f2f2f2">Nav.</div>
+                            <div class="d-flex justify-content-center align-items-center" style="width:100px; height:20px; border:1px solid black; border-bottom: 0px; background-color: #f2f2f2">S.</div>
+                            <div class="d-flex justify-content-center align-items-center" style="width:100px; height:80px; border:1px solid black;  background-color: #f2f2f2">Gallery</div>
+                        </div>
+                        
+                        <div> 
+                            <label style="font-size:12px;">
+                                <input  type="radio" ng-model="checkbox1" (change)="updateSelectedOptions2($event, 'Top Search, Gallery Below')"> Top Search, Gallery Below
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!-- Search Options-->
+                <div style="margin-top: 15px;"><h6 style=" font-weight:bold; font-size:18px; ">Other Settings:</h6></div>
+                <div class="d-flex flex-column">
+                    <div style="width:250px; font-weight: 600; padding-bottom: 4px;">
+                        <label>
+                            <input type="checkbox" (change)="updateSelectedOptions2($event, 'Gallery Search')"> Gallery Search
+                        </label>
+                    </div>
+                    <div style="width:270px; font-size: 15px; font-weight: 600; text-decoration: underline;"><p style="margin-bottom: 5px;">Product/Family Search Options:</p></div>
+                    <div class="d-flex justify-content-between align-items-center  ">
+                        <div style="width:270px; display:flex; justify-content: space-between;">
+                            <div>
+                                <label style="font-size:12px;">
+                                    <input type="checkbox" (change)="updateSelectedOptions2($event, 'SKU')"> SKU
+                                </label>
+                            </div>
+                            <div>
+                                <label style="font-size:12px;">
+                                    <input type="checkbox" (change)="updateSelectedOptions2($event, 'Search With Grouping ID')"> Search With Grouping ID
+                                </label>
+                            </div>
+                        </div>
+                        <div style="display:flex; justify-content:space-between; width:270px; padding-bottom: 8px;">
+                            <label style="font-size:12px;">
+                                <input type="checkbox" (change)="updateSelectedOptions2($event, 'Product Groups')"> Product Groups
+                            </label>
+                            <select style="font-size:12px; border-radius: 2px; width: 89px;" id="Location" name="Dropdown"><option  selected>--Select--</option></select>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center ">
+                        <div style="width:270px; padding-bottom: 8px;">
+                            <label style="font-size:12px;">
+                                <input type="checkbox" (change)="updateSelectedOptions2($event, 'Search With Starting letter of Item Name')"> Search With Starting letter of Item Name
+                            </label>
+                        </div>
+                        <div style="display:flex; justify-content:space-between; width:270px; padding-bottom: 8px;">
+                            <label style="font-size:12px;">
+                                <input type="checkbox" (change)="updateSelectedOptions2($event, 'Thickness')"> Thickness
+                            </label>
+                            <select style="font-size:12px; border-radius: 2px; width: 89px;" id="Location" name="Dropdown"><option  selected>--Select--</option></select>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center margin-top: 8px;">
+                        <div style="display:flex; justify-content:space-between; width:270px; padding-bottom: 8px;">
+                            <label style="font-size:12px;">
+                                <input type="checkbox" (change)="updateSelectedOptions2($event, 'Location')"> Location
+                            </label>
+                            <select style="font-size:12px; border-radius: 2px; width: 89px;" id="Location" name="Dropdown"><option  selected>Dropdown</option></select>
+                        </div>
+                        <div style="display:flex; justify-content:space-between; width:270px; padding-bottom: 8px;">
+                            <label style="font-size:12px;">
+                                <input type="checkbox" (change)="updateSelectedOptions2($event, 'Price Range')"> Price Range
+                            </label>
+                            <select style="font-size:12px; border-radius: 2px; width: 89px;" id="Location" name="Dropdown"><option  selected>Checkbox</option></select>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div style="display:flex; justify-content:space-between; width:270px; padding-bottom: 8px;">
+                            <label style="font-size:12px;">
+                                <input type="checkbox" (change)="updateSelectedOptions2($event, 'Product Types')"> Product Types
+                            </label>
+                            <select style="font-size:12px; border-radius: 2px; width: 89px;" id="Location" name="Dropdown"><option  selected>Dropdown</option></select>
+                        </div>
+                        <div style="display:flex; justify-content:space-between; width:270px; padding-bottom: 8px;">
+                            <label style="font-size:12px;"> 
+                                <input type="checkbox" (change)="updateSelectedOptions2($event, 'Origin')"> Origin
+                            </label>
+                            <select style="font-size:12px; border-radius: 2px; width: 89px;" id="Location" name="Dropdown"><option  selected>Dropdown</option></select>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div style="display:flex; justify-content:space-between; width:270px; padding-bottom: 8px;">
+                            <label style="font-size:12px;">
+                                <input type="checkbox" (change)="updateSelectedOptions2($event, 'Product Catogories')"> Product Catogories
+                            </label>
+                            <select style="font-size:12px; border-radius: 2px; width: 89px;" id="Location" name="Dropdown"><option  selected>Checkbox</option></select>
+                        </div>
+                        <div style="display:flex; justify-content:space-between; width:270px; padding-bottom: 8px;">
+                            <label style="font-size:12px;">
+                                <input type="checkbox" (change)="updateSelectedOptions2($event, 'Product Sub Catogories')"> Product Sub Catogories
+                            </label>
+                            <select style="font-size:12px; border-radius: 2px; width: 89px;" id="Location" name="Dropdown"><option  selected>Dropdown</option></select>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div style="display:flex; justify-content:space-between; width:270px; padding-bottom: 8px;">
+                            <label style="font-size:12px;">
+                                <input type="checkbox" (change)="updateSelectedOptions2($event, 'Product Color Codes')"> Product Color Codes
+                            </label>
+                            <select style="font-size:12px; border-radius: 2px; width: 89px;" id="Location" name="Dropdown"><option  selected>--Select--</option></select>
+                        </div>
+                        <div style="display:flex; justify-content:space-between; width:270px; padding-bottom: 8px;">
+                            <label style="font-size:12px;">
+                                <input type="checkbox" (change)="updateSelectedOptions2($event, 'Stock/Non Stock')"> Stock/Non Stock
+                            </label>
+                            <select style="font-size:12px; border-radius: 2px; width: 89px;" id="Location" name="Dropdown"><option  selected>--Select--</option></select>
+                        </div>
+                    </div>
+                    <div style="width:270px; font-size: 15px; font-weight: 600; text-decoration: underline;" ><p style="margin-bottom: 8px; margin-top: 5px;">Other Options:</p></div>
+                    <div class="d-flex justify-content-between align-items-center ">
+                        <div style="width:270px; display:flex; padding-bottom: 8px; justify-content:space-between;">
+                            <label style="font-size:12px;">
+                                <input type="checkbox" (change)="updateSelectedOptions2($event, 'Finishes')"> Finishes
+                            </label>
+                            <select style="font-size:12px; border-radius: 2px; width: 89px;" id="Location" name="Dropdown"><option  selected>Dropdown</option></select>
+                        </div>
+                        <div style="display:flex; justify-content:space-between; width:270px; padding-bottom: 8px;">
+                            <label style="font-size:12px;">
+                                <input type="checkbox" (change)="updateSelectedOptions2($event, 'Applications')"> Applications
+                            </label>
+                            <select style="font-size:12px; border-radius: 2px; width: 89px;" id="Location" name="Dropdown"><option  selected>--Select--</option></select>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center ">
+                        <div style="width:270px; display:flex; padding-bottom: 8px; justify-content:space-between;">
+                            <label style="font-size:12px;">
+                                <input type="checkbox" (change)="updateSelectedOptions2($event, 'Sizes')"> Sizes
+                            </label>
+                            <select style="font-size:12px; border-radius: 2px; width: 89px;" id="Location" name="Dropdown"><option  selected>--Select--</option></select>
+                        </div>
+                        <div style="display:flex; justify-content:space-between; width:270px; padding-bottom: 8px;">
+                            <label style="font-size:12px;">
+                                <input type="checkbox" (change)="updateSelectedOptions2($event, 'Slab options')"> Slab options
+                            </label>
+                            <select style="font-size:12px; border-radius: 2px; width: 89px;" id="Location" name="Dropdown"><option  selected>--Select--</option></select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="home-button-div py-1 d-flex justify-content-end" ><a routerLink="/DisplayPage" ><button type="submit" class="btn ">NEXT</button></a></div>
+        </div>
+        
+    </div>
+</form>

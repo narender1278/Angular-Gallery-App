@@ -1,0 +1,29 @@
+.home-button-div {
+    display: flex;
+    justify-content: end;
+}
+.home-body {
+    width:35%;
+    margin: 0px auto;
+    height:max-content;
+    padding: 30px;
+    border:1px solid #ddd;
+    border-radius:3px;
+}
+.footer {
+    margin-top: 20px;
+}
+
+.home-body button {
+    background-color: #2171AE;
+    color: white;
+}
+
+.home-body input {
+    background-color: white;
+    border:1px solid #ddd;
+}
+.home-body button:hover {
+    background-color: #007bff;
+    color: white;
+}
